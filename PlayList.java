@@ -132,8 +132,8 @@ class PlayList {
         for (int j = i + 1; j < result.length; j++) {
             result[j] = tracks[j - 1];
         }
+        tracks = result;
         size++;
-
         return false;
     }
 
@@ -156,6 +156,7 @@ class PlayList {
         for (int j = i; j < result.length; j++) {
             result[j] = tracks[j + 1];
         }
+        tracks = result;
         size--;
     }
 
