@@ -134,7 +134,7 @@ class PlayList {
         }
         tracks = result;
         size++;
-        return false;
+        return true;
     }
 
     /**
