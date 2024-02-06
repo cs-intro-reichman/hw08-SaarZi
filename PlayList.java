@@ -206,7 +206,7 @@ class PlayList {
             return -1;
         }
 
-        int minDuration = Integer.MIN_VALUE;
+        int minDuration = Integer.MAX_VALUE;
         int result = -1;
         for (int i = start; i < tracks.length; i++) {
             if (tracks[i].getDuration() < minDuration) {
